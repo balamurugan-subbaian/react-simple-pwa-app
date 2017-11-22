@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#999999" />
+  <link rel="manifest" href="manifest.json">
+  <title>Simple PWA App</title>
+</head>
+<body>
+  <div id="root">
+    Loading...
+  </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+      .register('serviceWorker.js')
+      .then(function() { console.log('Service Worker Registered'); });
+    }
+  </script>
+</body>
+</html>
