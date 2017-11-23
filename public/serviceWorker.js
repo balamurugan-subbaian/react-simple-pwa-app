@@ -2,7 +2,8 @@ var cacheName = 'simple-pwa';
 
 var filesToCache = [
     '/',
-    'index.html'
+    'index.html',
+    'icon-192x192.png'
 ];
 
 self.addEventListener('install', function(e) {
